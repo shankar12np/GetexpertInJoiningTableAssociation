@@ -29,9 +29,10 @@ public class ContactListController {
 
     @GetMapping
     public ResponseEntity<List<ContactList>> getContactList() {
+        System.out.println("Hello From GetMapping test");
         List<ContactList> allSavedContactList = contactListService.getAllContactLists();
         return ResponseEntity.ok(allSavedContactList);
-    }
+           }
 
 
 }
